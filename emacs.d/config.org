@@ -1,0 +1,101 @@
+#+TITLE: My Emacs Config
+#+AUTHOR: Jibran Anjum Chughtai
+#+STARTUP: fold
+#+PROPERTY: header-args :tangle config.el
+
+* SOME PERSONAL CONFIGURATION
+** These are some personal configuration I like in my emacs config
+
+#+begin_src emacs-lisp
+  (setq visible-bell t)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+  (tooltip-mode -1)
+  (set-fringe-mode 10)
+  (menu-bar-mode -1)
+  (global-display-line-numbers-mode 1)
+  (add-hook 'org-mode-hook (lambda () (org-toggle-pretty-entities)))
+  (set-frame-parameter (selected-frame) 'alpha '(100 100))
+  (add-to-list 'default-frame-alist '(alpha 100 100))
+  (setq backup-directory-alist `(("." . "~/.emacsBaks/")))
+  (setq org-agenda-files (list "~/Org/Agenda.org"))
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+  (add-hook 'org-mode-hook (lambda () (org-indent-mode 1)))
+  (setq org-hide-emphasis-markers t)
+  (which-key-mode t)
+  (ivy-mode t)
+  ;; (evil-mode t)
+  (recentf-mode t)
+  (setq python-guess-indent-offset nil)
+  (setq-default cursor-type 'hbar) 
+#+end_src
+
+
+** Zooming in and out
+You can just use the keybinding Control and minus sign(-) to zoom out and Control and equal to sign(=) to zoom in
+#+begin_src emacs-lisp
+  (global-set-key (kbd "C-=") 'text-scale-increase)
+  (global-set-key (kbd "C--") 'text-scale-decrease)
+#+end_src
+
+
+** Transparency
+#+BEGIN_SRC emacs-lisp
+  (set-frame-parameter (selected-frame) 'alpha '(100 100))
+  (add-to-list 'default-frame-alist '(alpha 100 100))
+#+END_SRC
+
+
+* PACKAGE MANAGEMENT
+** Setup Package.el to work with MELPA
+
+#+begin_src emacs-lisp
+  (require 'package)
+  (add-to-list 'package-archives
+	       '("melpa". "https://melpa.org/packages/"))
+  ;; (package-refresh-contents)
+  (package-initialize)
+#+end_src
+
+
+* Windows
+Setting up Windows in Emacs
+#+begin_src emacs-lisp
+  (global-set-key (kbd "C-c v") 'split-window-right)
+  (global-set-key (kbd "C-c h") 'split-window-below)
+  (global-set-key (kbd "C-c n") 'make-frame-command)
+#+end_src
+
+
+* FONTS
+#+begin_src emacs-lisp
+  (setq default-frame-alist 
+        (add-to-list 'default-frame-alist '(font . "JetBrainsMono Nerd Font 12")))
+#+end_src
+
+
+* My KeyBinds
+These are some of my own keybinds
+#+begin_src emacs-lisp
+  (global-set-key (kbd "C-c d") 'dired)
+  (global-set-key (kbd "C-c f") 'dired-create-empty-file)
+  (global-set-key (kbd "C-c g") 'dired-create-directory)
+  (global-set-key (kbd "C-c l") 'visual-line-mode)
+  (global-set-key (kbd "C-c t") 'ansi-term)
+  (global-set-key (kbd "C-c s t") 'tree-sitter-hl-mode)
+  (global-set-key (kbd "C-c s l") 'lsp)
+  (global-set-key (kbd "C-c r") 'replace-string)
+#+end_src
+
+** Quickly Open a File Keybind in emacs
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "C-c a") (lambda () (interactive) (find-file "~/Org/Agenda.org")))
+#+END_SRC
+
+
+
+* My StartPage
+
+#+begin_src emacs-lisp
+  (setq initial-buffer-choice "~/.emacs.d/myStartPage/start.org")
+#+end_src

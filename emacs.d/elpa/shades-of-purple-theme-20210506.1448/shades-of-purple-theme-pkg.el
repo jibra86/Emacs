@@ -1,0 +1,2 @@
+;;; Generated package description from shades-of-purple-theme.el  -*- no-byte-compile: t -*-
+(define-package "shades-of-purple-theme" "20210506.1448" "A theme with bold shades of purple" 'nil :commit "951b5901ff90ca86f18a39936fc84e2481a2c8b3" :authors '(("Arturo Vergara" . "hello@dead.computer")) :maintainer '("Arturo Vergara" . "hello@dead.computer") :url "https://github.com/arturovm/shades-of-purple-emacs")

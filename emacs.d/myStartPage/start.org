@@ -1,0 +1,46 @@
+#+TITLE: Shortcuts/Links to other files
+
+* Table of Contents :toc:
+
++ [[Agenda]]
++ [[Bashrc]]
++ [[Emacs Config]]
++ [[Awesome Config]]
++ [[Vim Config]]
++ [[Google Cloud Course]]
++ [[HTML and CSS]]
+
+* Agenda
+[[~/Org/Agenda.org]]
+  
+* Config Locations
+
+** Bashrc
+*** [[~/.bashrc]]
+
+
+** Emacs Config
+*** [[~/.emacs.d/config.org]]
+
+
+** Awesome Config
+*** [[~/.config/awesome/rc.lua]]
+
+
+** Vim Config
+*** [[~/.vimrc]]
+
+
+* Notes
+
+** Google Cloud Course
+*** [[~/Documents/Courses/Cloud-Seekho-S5/Google-Cloud-Computing-Foundations/Cloud-Computing-Fundamentals/Notes.org]]
+
+
+** HTML and CSS
+*** [[~/Documents/Courses/html-and-css-crash-course-FreeCodeAcademy/note.org]]
+
+* Book
+** Laws of Human Nature
+*** [[~/Documents/books/normBooks/Laws-of-Human-Nature/lawsOfHumanNature.org]]
+
