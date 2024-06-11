@@ -18,7 +18,8 @@
 ;; (evil-mode t)
 (recentf-mode t)
 (setq python-guess-indent-offset nil)
-(setq-default cursor-type 'hbar)
+(setq-default cursor-type 'hbar) 
+(setq-default tab-width 4)
 
 (global-set-key (kbd "C-=") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)

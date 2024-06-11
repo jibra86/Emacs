@@ -28,6 +28,7 @@
   (recentf-mode t)
   (setq python-guess-indent-offset nil)
   (setq-default cursor-type 'hbar) 
+  (setq-default tab-width 4)
 #+end_src
 
 
@@ -91,7 +92,6 @@ These are some of my own keybinds
 #+BEGIN_SRC emacs-lisp
   (global-set-key (kbd "C-c a") (lambda () (interactive) (find-file "~/Org/Agenda.org")))
 #+END_SRC
-
 
 
 * My StartPage
