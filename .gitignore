@@ -10,7 +10,7 @@ server/
 auto-save-list/
 backups/
 tramp
-undo-tree-hist
+undo-tree-hist/
 
 # Package Managers & Caches
 elpa/
