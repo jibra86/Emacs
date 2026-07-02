@@ -1,0 +1,17 @@
+(undo-tree-save-format-version . 1)
+"818bbbc0637d2e2b6424be5b1b7bf571a0af28be"
+[nil nil nil nil (27198 40715 22247 856000) 0 nil]
+([nil nil ((1392 . 1394) (t 27052 13875 750602 454000)) nil (27198 40715 22246 636000) 0 nil])
+([nil nil ((1394 . 1395)) nil (27198 40715 22245 199000) 0 nil])
+([nil nil (("x" . -1392) (undo-tree-id0 . -1) ("k" . -1393) (undo-tree-id1 . -1) ("
+" . -1394) (undo-tree-id2 . -1) 1395) nil (27198 40715 22241 35000) 0 nil])
+([nil nil ((750 . 751) (t 27198 40715 23481 221000)) nil (27198 45144 661713 471000) 0 nil])
+([nil nil ((926 . 927)) nil (27198 45144 661712 548000) 0 nil])
+([nil nil ((1132 . 1133)) nil (27198 45144 661711 821000) 0 nil])
+([nil nil ((1335 . 1336)) nil (27198 45144 661711 77000) 0 nil])
+([nil nil ((#("
+" 0 1 (face markdown-link-face help-echo "./evaluating_claude.md" font-lock-multiline t mouse-face markdown-highlight-face keymap (keymap (mouse-2 . markdown-follow-thing-at-point) (follow-link . mouse-face)) fontified t)) . -1335) (undo-tree-id1 . -1) 1336) nil (27198 45144 661710 79000) 0 nil])
+([nil nil ((1335 . 1336)) nil (27198 45144 661707 466000) 0 nil])
+([nil current ((#("
+" 0 1 (face markdown-link-face help-echo "./evaluating_claude.md" font-lock-multiline t mouse-face markdown-highlight-face keymap (keymap (mouse-2 . markdown-follow-thing-at-point) (follow-link . mouse-face)) fontified t)) . -1335) (undo-tree-id0 . -1) 1336) nil (27198 45144 661703 700000) 0 nil])
+nil

@@ -1,0 +1,24 @@
+# Personal History & Sessions
+recentf
+history
+savehist
+places
+.emacs-places
+.emacs.desktop
+.emacs.desktop.lock
+server/
+auto-save-list/
+backups/
+tramp
+
+# Package Managers & Caches
+elpa/
+straight/
+.cache/
+url/
+eln-cache/
+*.elc
+
+# Security & Local Customizations
+custom.el
+secrets.el
